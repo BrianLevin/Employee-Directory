@@ -1,0 +1,135 @@
+[
+{
+   "name": "Brian Levin",
+   "email": "bml201095@gmail.com",
+   "DOB" : "12-27-1990",
+   "position": "manager"
+
+
+
+
+
+
+},
+
+{
+    "name": "Bob Start",
+    "email": "bob@gmail.com",
+    "DOB" : "12-23-1980",
+    "position": "front-end"
+ 
+ 
+ 
+ 
+ 
+ 
+ },
+
+
+ {
+    "name": "Mary Stu",
+    "email": "mary@gmail.com",
+    "DOB" : "11-12-1993",
+    "position": "back-end"
+
+
+ },
+
+
+{
+   "name": "Bean Curd",
+   "email": "Bean@gmail.com",
+   "DOB" : "12-29-1967",
+   "position": "manager"
+
+
+
+
+
+
+},
+
+
+{
+    "name": "Martha Joe",
+    "email": "martha@gmail.com",
+    "DOB" : "12-27-1988",
+    "position": "cashier"
+ 
+ 
+ 
+ 
+ 
+ 
+ },
+
+ {
+    "name": "Scott Soup",
+    "email": "Scott@gmail.com",
+    "DOB" : "12-27-1999",
+    "position": "driver"
+ 
+ 
+ 
+ 
+ 
+ 
+ },
+
+
+{
+   "name": "Mike Joe",
+   "email": "bml201095@gmail.com",
+   "DOB" : "03-8-1985",
+   "position": "Engineer"
+
+
+
+
+
+
+},
+
+
+{
+    "name": "Steve Smith",
+    "email": "Steegmail.com",
+    "DOB" : "11-20-1989",
+    "position": "accoutant"
+ 
+ 
+ 
+ 
+ 
+ 
+ },
+
+ {
+    "name": "Morgan Jones",
+    "email": "Morgan@gmail.com",
+    "DOB" : "12-27-1990",
+    "position": "Janitor "
+ 
+ 
+ 
+ 
+ 
+ 
+ },
+
+
+ {
+    "name": "Stacey Kat",
+    "email": "Stacey@gmail.com",
+    "DOB" : "10-27-1996",
+    "position": "marketing"
+ 
+ 
+ 
+ 
+ 
+ 
+ }
+
+
+]
