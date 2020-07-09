@@ -22,9 +22,9 @@ class App extends React.Component {
       });
 
   }
-  handleChangePosition = (event) => {
+   handleChangePosition = (event) => {
     const selectedPoisition = event.target.value;
-    const AllEmployees = this.state.allEmployees;
+    const allEmployees = this.state.allEmployees;
 
     this.setState({
       employees: allEmployees.filter(employee => {
@@ -32,18 +32,18 @@ class App extends React.Component {
 
           return true;
         }
-
+    return false;
 
       })
 
 
-    })
-
-
+    });
 
   }
+
+  
   render() {
-    if (this.state, isLoading) {
+    if (this.state.isLoading) {
       return <div> Loading...</div>
 
     }
@@ -51,7 +51,7 @@ class App extends React.Component {
       <>
         <div>
           <label> Filter By Position</label>
-          <select> onChange= {this.ChangePosition}
+          <select onChange= {this.handleChangePosition}>
             <option value="All">All</option>
             <option value="manager">Manager</option>
 
