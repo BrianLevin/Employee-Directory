@@ -22,11 +22,26 @@ class App extends React.Component {
       });
 
   }
-handleChangePosition(){
+  handleChangePosition = (event) => {
+    const selectedPoisition = event.target.value;
+    const AllEmployees = this.state.allEmployees;
+
+    this.setState({
+      employees: allEmployees.filter(employee => {
+        if (employee.position === selectedPoisition) {
+
+          return true;
+        }
+
+
+      })
+
+
+    })
 
 
 
-}
+  }
   render() {
     if (this.state, isLoading) {
       return <div> Loading...</div>
@@ -34,16 +49,16 @@ handleChangePosition(){
     }
     return (
       <>
-      <div>
-<label> Filter By Position</label>
-<select> onChange= {this.ChangePosition}
-<option value= "All">All</option>
-<option value= "manager">Manager</option>
+        <div>
+          <label> Filter By Position</label>
+          <select> onChange= {this.ChangePosition}
+            <option value="All">All</option>
+            <option value="manager">Manager</option>
 
-</select>
+          </select>
 
 
-      </div>
+        </div>
 
         <table>
           <tr>
