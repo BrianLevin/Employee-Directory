@@ -39,7 +39,14 @@ class App extends React.Component {
             <th>Date of Birth</th>
           </tr>
           {this.state.employees.map(employee => <div />)}
-          
+          <tr key={employee.id}>
+            <td>{employees.name}</td>
+            <td>{employees.email}</td>
+            <td>{employees.DOB}</td>
+            <td>{employees.position}</td>
+
+          </tr>
+          ))}
         </table>
 
       </>
