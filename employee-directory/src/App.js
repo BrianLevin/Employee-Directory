@@ -53,8 +53,17 @@ class App extends React.Component {
           <label> Filter By Position</label>
           <select onChange= {this.handleChangePosition}>
             <option value="All">All</option>
-            <option value="manager">Manager</option>
+            <option value="manager">manager</option>
+            <option value="front-end">fonr-end</option>
+            <option value="back-end">back-end</option>
+            <option value="janitor">janitor</option>
+            <option value="marketing ">marketing</option>
+            <option value="cashier">cashier</option>
+            <option value="driver">driver</option>
+            <option value="engineer">engineer</option>
+            <option value="accountant">accountant</option>
 
+ <option value="manager">Manager</option>
           </select>
 
 
@@ -67,12 +76,12 @@ class App extends React.Component {
             <th>Position</th>
             <th>Date of Birth</th>
           </tr>
-          {this.state.employees.map(employee => <div />)}
+          {this.state.employees.map(employee => ( 
           <tr key={employee.id}>
-            <td>{employees.name}</td>
-            <td>{employees.email}</td>
-            <td>{employees.DOB}</td>
-            <td>{employees.position}</td>
+            <td>{employee.name}</td>
+            <td>{employee.email}</td>
+            <td>{employee.DOB}</td>
+            <td>{employee.position}</td>
 
           </tr>
           ))}
