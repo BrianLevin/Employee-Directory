@@ -21,18 +21,24 @@ class App extends React.Component {
 
       });
 
-
-
   }
-
-
-
 
   render() {
-    return <div />
+    if (this.state, isLoading) {
+      return <div> Loading...</div>
+
+    }
+    return (
+      <>
+
+        <table>
+          {this.state.employees.map(employee => <div />)}
+        </table>
+
+      </>
+    )
 
   }
-
 
 }
 
