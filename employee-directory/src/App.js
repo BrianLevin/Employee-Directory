@@ -22,7 +22,11 @@ class App extends React.Component {
       });
 
   }
+handleChangePosition(){
 
+
+
+}
   render() {
     if (this.state, isLoading) {
       return <div> Loading...</div>
@@ -30,6 +34,16 @@ class App extends React.Component {
     }
     return (
       <>
+      <div>
+<label> Filter By Position</label>
+<select> onChange= {this.ChangePosition}
+<option value= "All">All</option>
+<option value= "manager">Manager</option>
+
+</select>
+
+
+      </div>
 
         <table>
           <tr>
