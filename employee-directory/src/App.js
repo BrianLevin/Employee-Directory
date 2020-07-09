@@ -32,7 +32,14 @@ class App extends React.Component {
       <>
 
         <table>
+          <tr>
+            <th>Name</th>
+            <th>Email></th>
+            <th>Position</th>
+            <th>Date of Birth</th>
+          </tr>
           {this.state.employees.map(employee => <div />)}
+          
         </table>
 
       </>
