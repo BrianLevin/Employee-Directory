@@ -1,4 +1,5 @@
 import React from 'react';
+import Moment from 'moment';
 
 class App extends React.Component {
 
@@ -22,7 +23,7 @@ class App extends React.Component {
       });
 
   }
-   handleChangePosition = (event) => {
+  handleChangePosition = (event) => {
     const selectedPoisition = event.target.value;
     const allEmployees = this.state.allEmployees;
 
@@ -32,16 +33,49 @@ class App extends React.Component {
 
           return true;
         }
-    return false;
+        return false;
 
       })
 
 
     });
-
   }
 
+    handleSort = (event) => {
+      var sortValue = event.target.value;
+      if (sortValue === 'oldtoYoung') {
+        this.setState({
+          employees: this.state.employees.sort((employee1, employee2) => {
+            if (Moment(employee1.DOB) < Moment(employee2.DOB)) {
+              return -1;
+            }
+            if (Moment(employee1.DOB) > Moment(employee2.DOB)) {
+              return 1;
+
+            }
+            return 0;
+          })
+
+        })
+      }
+      if (sortValue === 'youngToOld') {
+        this.setState({
+          employees: this.state.employees.sort((employee1, employee2) => {
+            if (Moment(employee1.DOB) > Moment(employee2.DOB)) {
+              return -1;
+            }
+            if (Moment(employee1.DOB) < Moment(employee2.DOB)) {
+              return 1;
+
+            }
+            return 0;
+          })
+
+        })
+      }
+    }
   
+
   render() {
     if (this.state.isLoading) {
       return <div> Loading...</div>
@@ -51,7 +85,7 @@ class App extends React.Component {
       <>
         <div>
           <label> Filter By Position</label>
-          <select onChange= {this.handleChangePosition}>
+          <select onChange={this.handleChangePosition}>
             <option value="All">All</option>
             <option value="manager">manager</option>
             <option value="front-end">fonr-end</option>
@@ -63,11 +97,19 @@ class App extends React.Component {
             <option value="engineer">engineer</option>
             <option value="accountant">accountant</option>
 
- <option value="manager">Manager</option>
+            <option value="manager">Manager</option>
           </select>
 
 
         </div>
+        <label>Sort by</label>
+        <select onChange={this.handleSort}>
+          <option />
+          <option value="youngtoOld"> Youngest to Oldest</option>
+          <option value="oldtoYoung"> Oldest to Youngest</option>
+
+
+        </select>
 
         <table>
           <tr>
@@ -76,14 +118,14 @@ class App extends React.Component {
             <th>Position</th>
             <th>Date of Birth</th>
           </tr>
-          {this.state.employees.map(employee => ( 
-          <tr key={employee.id}>
-            <td>{employee.name}</td>
-            <td>{employee.email}</td>
-            <td>{employee.DOB}</td>
-            <td>{employee.position}</td>
+          {this.state.employees.map(employee => (
+            <tr key={employee.id}>
+              <td>{employee.name}</td>
+              <td>{employee.email}</td>
+              <td>{employee.DOB}</td>
+              <td>{employee.position}</td>
 
-          </tr>
+            </tr>
           ))}
         </table>
 
