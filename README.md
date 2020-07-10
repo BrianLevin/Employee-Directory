@@ -3,7 +3,7 @@
 
 
 
- ![](images/directory.png) 
+ ![](src/images/directory.png) 
  
  
 # Badges
@@ -17,19 +17,20 @@
 ## Description
 
 The Online-Offline-Budget Tracker allows the user to use offline access and functionality. The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online
+
 ## Link to application
 
-https://online-offline-budget-app.herokuapp.com/
+https://employee-directory4.herokuapp.com/
 
 ## Installation
 
      
-     - dotenv
-     - lite-sever
-     - express 
-     - mongoose
-     - compression
-     - Morgan
+     
+     - moment
+     - react
+     - react-dom
+     - react-scripts
+     
      
 
 ## License:
