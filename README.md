@@ -8,17 +8,17 @@ This applications allows the  user to view  their entire employee directory usin
  
  This is the home page:
  
- ![Home Screenshot](images/home.png) 
+ ![Home Screenshot](src/images/home.png) 
  
  Clicking on the right side of the employees name will sort their names by alphabetical order:
  
  
- ![Sort Employees Screenshot](images/sort.png) 
+ ![Sort Employees Screenshot](src/images/sort.png) 
  
  Users can also search for specific employees by name and get narrowed results:
  
  
- ![Searchbar Screenshot](images/search.png) 
+ ![Searchbar Screenshot](src/images/search.png) 
  
 ## Badges
 
