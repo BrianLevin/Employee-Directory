@@ -1,12 +1,26 @@
 # Employee Directory
 
 
+## Description
 
-
- ![](src/images/directory.png) 
+This applications allows the  user to view  their entire employee directory using React. The user can sort their employees information by their name or they can seatch them in the search bar.
+ ## Click [here](https://employee-directory4.herokuapp.com/) for the live app.  
+ 
+ This is the home page:
+ 
+ ![Home Screenshot](images/home.png) 
+ 
+ Clicking on the right side of the employees name will sort their names by alphabetical order:
  
  
-# Badges
+ ![Sort Employees Screenshot](images/sort.png) 
+ 
+ Users can also search for specific employees by name and get narrowed results:
+ 
+ 
+ ![Searchbar Screenshot](images/search.png) 
+ 
+## Badges
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/BrianLevin/Employee-Directory)
 
@@ -14,30 +28,17 @@
 
 ![GitHub followers](https://img.shields.io/github/followers/BrianLevin?style=social)
 
-## Description
-
-The Online-Offline-Budget Tracker allows the user to use offline access and functionality. The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online
-
-## Link to application
-
-https://employee-directory4.herokuapp.com/
 
 ## Installation
 
      
-     
+     - axios 
      - moment
      - react
      - react-dom
      - react-scripts
-     
-     
-
-## License:
-
-      1.0.0 
 
 
-### Email:
+## Email:
 
         bml201095@gmail.com
