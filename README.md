@@ -3,7 +3,7 @@
 
 ## Description
 
-This applications allows the  user to view  their entire employee directory using React. The user can sort their employees information by their name or they can seatch them in the search bar.
+This applications allows the  user to view  their entire employee directory using React. The user can sort their employees information by their name or they can search them in the search bar.
  ## Click [here](https://employee-directory4.herokuapp.com/) for the live app.  
  
  This is the home page:
